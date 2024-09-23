@@ -30,26 +30,28 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ backgroundColor: '#1a202c' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            Explore Vancouver
-          </Typography>
+        <Typography
+  variant="h6"
+  noWrap
+  component="a"
+  href="/"
+  sx={{
+    mr: 2, // margin right for spacing on larger screens
+    display: { xs: 'none', md: 'flex' },
+    fontFamily: 'monospace',
+    fontWeight: 700,
+    letterSpacing: '.1rem', // Reduced from .3rem for better fit
+    color: 'white', // Assuming you've changed navbar color to dark
+    textDecoration: 'none',
+    padding: '0 10px', // Added padding for smaller screens or to ensure text isn't against the edge
+    flexGrow: { xs: 1, md: 0 }, // Allows it to take up remaining space on mobile
+  }}
+>
+  Explore Vancouver
+</Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton

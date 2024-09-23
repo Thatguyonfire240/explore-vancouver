@@ -7,6 +7,7 @@ import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
 import { TwitterTimelineEmbed } from 'react-twitter-embed'
+const CardMemo = React.memo(Card);
 
 const News = () => {
     return (    
@@ -26,7 +27,7 @@ const News = () => {
           </div>
         <Card sx={{ width: 350 }}>
           <CardContent>
-            <Typography gutterBottom varient="h1" component="div">
+            <Typography gutterBottom variant="h1" component="div">
               
             </Typography>
           </CardContent>
@@ -39,7 +40,7 @@ const News = () => {
           </div>
         <Card sx={{ width: 350 }}>
           <CardContent>
-            <Typography gutterBottom varient="h1" component="div">
+            <Typography gutterBottom variant="h1" component="div">
               
             </Typography>
           </CardContent>
@@ -52,7 +53,7 @@ const News = () => {
           </div>
         <Card sx={{ width: 350 }}>
           <CardContent>
-            <Typography gutterBottom varient="h1" component="div">
+            <Typography gutterBottom variant="h1" component="div">
               
             </Typography>
           </CardContent>
